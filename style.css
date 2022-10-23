@@ -4,6 +4,7 @@ body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center; /* es para centrar texto */
+    border-radius: 15px;
 
 }
 
