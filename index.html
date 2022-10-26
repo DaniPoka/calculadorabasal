@@ -2,6 +2,11 @@
 <html>      <!--todo lo que esta dentro de html va a ser la web-->
     <head>
         <link rel="stylesheet" href="./style.css">
+        <title>Calculadora de Hidratación basal</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="./script.js" defer></script>
 
     </head> <!--todo la info que la pagina web necesita para que el navegador sepa como interactuar con la pagina-->
     <body>
@@ -10,12 +15,18 @@
               <!-- FORMULARIO -->
               <div class="contenido">
                     <h1>Hidratación Basal</h1>
-                    <p>ingrese el peso en kg</p> <!-- p viene de parrafo-->
-                    <input type="number" placeholder="ingresar aqui"> <!--no tiene etiqueta de cierre por que al no tener datos antes de cargarse la pagina no puede encalupsa nada aun-->
-                    <br>
-                    <button>Calcular</button>
+                    <span class="item">ingrese el peso en kg</span>
+                    
+                    
+                    <input class="item" id="peso" type="number" placeholder="ingresar aqui"> <!--no tiene etiqueta de cierre por que al no tener datos antes de cargarse la pagina no puede encalupsa nada aun-->
+                    
+                    
+                    <button class="item" id="calcular">Calcular</button>
+
                     <p>Resultados:</p>
-                    <p>mostrar resultado</p>
+                    <span class="item" id="error">*Debe completar los datos*</span>
+                    <span class="itemresultado" id="flu"></span>
+                    <span class="itemresultado" id="man"></span>
                 
                 </div>
             </div>
@@ -37,4 +48,3 @@
     </body>
 
 </html>
-
