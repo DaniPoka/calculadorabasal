@@ -4,7 +4,6 @@ body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center; /* es para centrar texto */
-    border-radius: 15px;
 
 }
 
@@ -14,7 +13,7 @@ body{
     position: absolute;
     inset: 0;
     margin: auto;
-    border-radius: 15px;
+
 }
 
 #formulario {
@@ -63,4 +62,21 @@ button {
     border: none;
     border-radius: 20px;
     font-weight: bold;
+}
+
+#resultado {
+    display:block;
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.itemresultado {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(44, 40, 80);
+    
 }
