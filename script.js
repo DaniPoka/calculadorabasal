@@ -31,9 +31,9 @@ CALCULAR.addEventListener('click', () => {
     else {
         ERROR.style.display = 'none'
         let flujo = calcFlujo(DATO);
-        var fr= flujo.toFixed();
+        var fr= flujo.toFixed(2);
         let mantenimiento = flujo*1.5;
-        var mr= mantenimiento.toFixed();
+        var mr= mantenimiento.toFixed(2);
         FLU.innerHTML = fr + ' cc/hr';
         MAN.innerHTML = 'm+m/2: ' + mr + ' cc/hr';
         FLU.style.display = 'block';
