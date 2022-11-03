@@ -15,6 +15,7 @@ CALCULAR.addEventListener('click', () => {
         ERROR.style.display = 'block';
         FLU.style.display = 'none';
         MAN.style.display = 'none';
+        DIA.style.display = 'none';
 
     } else if (DATO >= 30){
         ERROR.style.display = 'none'
@@ -32,11 +33,11 @@ CALCULAR.addEventListener('click', () => {
     else {
         ERROR.style.display = 'none'
         let flujo = calcFlujo(DATO);
-        var fr= flujo.toFixed();
+        var fr = flujo.toFixed();
         let mantenimiento = flujo*1.5;
-        var mr= mantenimiento.toFixed();
-        var dia=flujo*24;
-        DIA.innerHTML = dia + ' cc';
+        var mr = mantenimiento.toFixed();
+        var dia = flujo*24;
+        DIA.innerHTML = 'diario: ' + dia + ' cc';
         FLU.innerHTML = fr + ' cc/hr';
         MAN.innerHTML = 'm+m/2: ' + mr + ' cc/hr';
         DIA.style.display = 'block';
