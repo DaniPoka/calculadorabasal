@@ -18,7 +18,8 @@ CALCULAR.addEventListener('click', () => {
         DIA.style.display = 'none';
 
     } else if (DATO >= 30){
-        ERROR.style.display = 'none'
+        ERROR.style.display = 'none';
+        DIA.style.display = 'none';
         let flujo = calcFlujo(DATO);
         let f1 = (flujo*1500)/24;
         let f2 = (flujo*2000)/24;
