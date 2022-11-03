@@ -4,6 +4,7 @@ const CALCULAR = document.getElementById('calcular');
 const ERROR = document.getElementById('error');
 const FLU = document.getElementById('flu');
 const MAN = document.getElementById('man');
+const DIA = document.getElementById('dia');
 
 CALCULAR.addEventListener('click', () => {
     console.log('clickeamos');
@@ -31,11 +32,14 @@ CALCULAR.addEventListener('click', () => {
     else {
         ERROR.style.display = 'none'
         let flujo = calcFlujo(DATO);
-        var fr= flujo.toFixed(2);
+        var fr= flujo.toFixed();
         let mantenimiento = flujo*1.5;
-        var mr= mantenimiento.toFixed(2);
+        var mr= mantenimiento.toFixed();
+        var dia=flujo*24;
+        DIA.innerHTML = dia + ' cc';
         FLU.innerHTML = fr + ' cc/hr';
         MAN.innerHTML = 'm+m/2: ' + mr + ' cc/hr';
+        DIA.style.display = 'block';
         FLU.style.display = 'block';
         MAN.style.display = 'block';
     }
